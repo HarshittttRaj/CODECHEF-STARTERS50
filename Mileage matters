@@ -1,0 +1,28 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	int t,n,x,y,a,b;
+	
+	cin>>t;
+	while(t>0){
+	    cin>>n>>x>>y>>a>>b;
+	    
+	    float petrol=(x*1.0/a)*n, diesel=(y*1.0/b)*n;
+	    
+	    if(petrol>diesel){
+	        cout<<"DIESEL"<<endl;
+	        
+	    }
+	    else if(petrol<diesel){
+	        cout<<"PETROL"<<endl;
+	        
+	        
+	    }
+	    else{
+	        cout<<"ANY"<<endl;
+	    }
+	    t--;
+	}
+	return 0;
+}
