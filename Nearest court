@@ -1,0 +1,14 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	int t,x,y,z,d;
+	cin>>t;
+	while(t--){
+	    cin>>x>>y;
+	    z=(x+y)/2;
+	    d=max(x,y);
+	    cout<<abs(z-d)<<endl;
+	}
+	return 0;
+}
